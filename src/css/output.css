@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    .max-container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .clip-inset-0{
+        clip-path: inset(0 0 100% 0);
+        transition: clip-path .7s ease-in-out;
+    }
+    .clip-inset-100{
+        clip-path: inset(0 0 0 0);
+        transition: clip-path .3s ease-in-out;
+    }
+    .clip-inset-none{
+        clip-path: none;
+        transition: none;
+    }
+
+    .inset-content-0{
+        clip-path: inset(0 0 0 100%);
+        transition: clip-path .3s ease-in-out;
+    }
+    .inset-content-100{
+        clip-path: inset(0 0 0 0);
+        transition: clip-path .7s ease-in-out;
+    }
+
+    .filters {
+        filter: blur(1px);
+    }
+    body.modal-open {
+        overflow: hidden;
+        width: 100%;
+    }
+
+}
