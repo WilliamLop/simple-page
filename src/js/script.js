@@ -10,7 +10,8 @@ function mostrarLinks(){
     let linkActive = i === 0 ? 'text-veryDark dark:text-veryWhite' : 'text-veryDesaturedGray'
         
     return `
-    <li class="${linkActive} font-semibold">
+    <li class="${linkActive} font-semibold xl:font-medium cursor-pointer hover:text-veryDark
+    duration-500 ease-in-out dark:hover:text-veryWhite">
         ${link.label}
     </li>`}).join("");
 

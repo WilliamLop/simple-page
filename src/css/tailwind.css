@@ -605,10 +605,6 @@ body.modal-open {
   grid-column-start: 1;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
-}
-
 .row-start-1 {
   grid-row-start: 1;
 }
@@ -660,16 +656,24 @@ body.modal-open {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.w-\[60px\] {
+  width: 60px;
 }
 
-.w-\[70px\] {
-  width: 70px;
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-full {
@@ -686,6 +690,10 @@ body.modal-open {
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-end {
+  place-content: end;
 }
 
 .items-center {
@@ -714,6 +722,10 @@ body.modal-open {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .rounded-full {
@@ -752,6 +764,19 @@ body.modal-open {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -769,10 +794,6 @@ body.modal-open {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-center {
@@ -863,6 +884,11 @@ body.modal-open {
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
+.hover\:text-veryDark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 23 41 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:bg-veryDark) {
   --tw-bg-opacity: 1;
   background-color: rgb(17 23 41 / var(--tw-bg-opacity));
@@ -874,6 +900,11 @@ body.modal-open {
 }
 
 :is(.dark .dark\:text-veryWhite) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-veryWhite:hover) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -960,20 +991,59 @@ body.modal-open {
     padding-top: 0px;
   }
 
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .xl\:my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+  .xl\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .xl\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .xl\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .xl\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
   }
 
   .xl\:mb-2 {
     margin-bottom: 0.5rem;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .xl\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
   }
 
   .xl\:grid {
@@ -988,11 +1058,39 @@ body.modal-open {
     width: 90%;
   }
 
+  .xl\:max-w-\[520px\] {
+    max-width: 520px;
+  }
+
+  .xl\:-scroll-mt-12 {
+    scroll-margin-top: -3rem;
+  }
+
   .xl\:grid-cols-\[1fr\2c 1fr\] {
     grid-template-columns: 1fr 1fr;
   }
 
+  .xl\:items-end {
+    align-items: flex-end;
+  }
+
   .xl\:items-center {
     align-items: center;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .xl\:self-start {
+    align-self: flex-start;
+  }
+
+  .xl\:self-end {
+    align-self: flex-end;
+  }
+
+  .xl\:font-medium {
+    font-weight: 500;
   }
 }
