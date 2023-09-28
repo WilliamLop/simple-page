@@ -660,10 +660,6 @@ body.modal-open {
   height: 100vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-\[300px\] {
   width: 300px;
 }
@@ -684,20 +680,12 @@ body.modal-open {
   max-width: 400px;
 }
 
-.cursor-auto {
-  cursor: auto;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
 .flex-col {
   flex-direction: column;
-}
-
-.place-content-center {
-  place-content: center;
 }
 
 .items-center {
@@ -979,11 +967,6 @@ body.modal-open {
 }
 
 @media (min-width: 1280px) {
-  .xl\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .xl\:my-10 {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;

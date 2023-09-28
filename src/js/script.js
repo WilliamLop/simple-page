@@ -17,6 +17,8 @@ function mostrarLinks(){
     navList.innerHTML = listHTML
 }
 
+
+
 function mostrarChecks () {
     const checksList = document.getElementById('check-container');
 
@@ -55,6 +57,8 @@ linkHamburger.addEventListener('click', (e) => {
     }
 
 });
+
+
 
 
 const toggleDark = document.getElementById('toggleDark');
